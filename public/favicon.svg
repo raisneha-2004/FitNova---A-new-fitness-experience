@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none">
+  <defs>
+    <linearGradient id="fqGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff5a36" />
+      <stop offset="100%" stop-color="#ff7a52" />
+    </linearGradient>
+  </defs>
+
+  <!-- Orange gradient tile with rounded corners (rounded-xl) -->
+  <rect width="48" height="48" rx="12" fill="url(#fqGradient)" />
+
+  <!-- Horizontal Dumbbell Bar (stroke 2.5, round caps) -->
+  <line x1="8" y1="24" x2="40" y2="24" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" />
+
+  <!-- Left Outer Weight Plate -->
+  <rect x="10" y="16" width="3.5" height="16" rx="1.5" fill="#ffffff" />
+
+  <!-- Left Inner Weight Plate -->
+  <rect x="15" y="18" width="3" height="12" rx="1" fill="#ffffff" />
+
+  <!-- Right Inner Weight Plate -->
+  <rect x="30" y="18" width="3" height="12" rx="1" fill="#ffffff" />
+
+  <!-- Right Outer Weight Plate -->
+  <rect x="34.5" y="16" width="3.5" height="16" rx="1.5" fill="#ffffff" />
+
+  <!-- Pose Landmark Joint Trio Lines -->
+  <line x1="24" y1="19" x2="21.5" y2="28" stroke="#ffffff" stroke-width="1.2" stroke-linecap="round" opacity="0.95" />
+  <line x1="24" y1="19" x2="26.5" y2="28" stroke="#ffffff" stroke-width="1.2" stroke-linecap="round" opacity="0.95" />
+
+  <!-- Pose Landmark Joint Trio Circles -->
+  <circle cx="24" cy="19" r="2.2" fill="#ffffff" />
+  <circle cx="21.5" cy="28" r="1.8" fill="#ffffff" />
+  <circle cx="26.5" cy="28" r="1.8" fill="#ffffff" />
+</svg>

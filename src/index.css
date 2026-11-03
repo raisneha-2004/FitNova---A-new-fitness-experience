@@ -1,0 +1,90 @@
+@import "tailwindcss";
+
+@theme {
+  --color-navy-950: #0b0d17;
+  --color-navy-900: #111424;
+  --color-navy-850: #16192e;
+  --color-coral: #ff5a36;
+  --color-coral-hover: #ff7a52;
+  --color-coral-light: #ff9175;
+  --color-coral-glow: rgba(255, 90, 54, 0.25);
+  --color-bone-blue: #3b82f6;
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+:root {
+  --bg-navy: #0b0d17;
+  --accent-coral: #ff5a36;
+  --accent-coral-hover: #ff7a52;
+  --bone-blue: #3b82f6;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #0b0d17;
+  color: #f1f5f9;
+  overflow-x: hidden;
+}
+
+/* Background Subtle Orange Grid with Radial Mask */
+.bg-orange-grid {
+  background-size: 48px 48px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 90, 54, 0.12) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 90, 54, 0.12) 1px, transparent 1px);
+  mask-image: radial-gradient(circle at 50% 30%, black 60%, rgba(0, 0, 0, 0.4) 85%, transparent 100%);
+  -webkit-mask-image: radial-gradient(circle at 50% 30%, black 60%, rgba(0, 0, 0, 0.4) 85%, transparent 100%);
+}
+
+/* Cards & Glassmorphism */
+.fq-card {
+  background-color: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  border-radius: 1rem;
+  box-shadow: inset 0 1px 1px 0 rgba(255, 255, 255, 0.06);
+}
+
+.fq-hero-card {
+  background-color: rgba(17, 20, 36, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 90, 54, 0.25);
+  border-radius: 1.25rem;
+  box-shadow: 0 0 50px -10px rgba(255, 90, 54, 0.22), inset 0 1px 1px 0 rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease;
+}
+
+.fq-hero-card:hover {
+  transform: perspective(1000px) rotateX(1deg) rotateY(-2deg) scale(1.01);
+  box-shadow: 0 0 65px -5px rgba(255, 90, 54, 0.35), inset 0 1px 1px 0 rgba(255, 255, 255, 0.15);
+}
+
+/* Subtle Orange Outer Glow utility */
+.glow-coral-sm {
+  box-shadow: 0 0 25px rgba(255, 90, 54, 0.2);
+}
+
+.glow-coral-lg {
+  box-shadow: 0 0 50px rgba(255, 90, 54, 0.25);
+}
+
+/* Primary Coral Button */
+.btn-coral {
+  background-color: #ff5a36;
+  color: #ffffff;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 18px rgba(255, 90, 54, 0.32);
+}
+
+.btn-coral:hover {
+  background-color: #ff7a52;
+  box-shadow: 0 6px 24px rgba(255, 90, 54, 0.45);
+  transform: translateY(-1px);
+}
+
+.btn-coral:active {
+  transform: translateY(0);
+}
